@@ -1,0 +1,23 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  @apply font-["Poppins",_sans-serif];
+}
+
+main {
+  @apply before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:bg-no-repeat before:h-full before:bg-[url("../img/bg.jpg")];
+}
+
+.simply-countdown {
+  @apply flex font-["Poppins",_sans-serif];
+}
+.simply-countdown > .simply-section {
+  @apply w-7 h-7 p-7 md:w-10 text-xs md:text-base md:h-10 md:p-10 rounded-full flex items-center justify-center float-left m-2 bg-primary shadow-md;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  @apply block text-center;
+}

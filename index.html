@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Undangan online | kumpul trah eyang riyo lelono"
+    />
+    <meta
+      name="keywords"
+      content="Undangan Online kumpul trah eyang riyo lelono"
+    />
+    <title>Undangan Online</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/light.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="sticky z-10 flex justify-center w-full -mt-7 top-5">
+      <label
+        class="w-5 h-5 p-4 bg-white rounded-full swap switch-mode swap-rotate mix-blend-difference"
+      >
+        <input type="checkbox" class="theme-controller" />
+        <i
+          class="flex items-center justify-center text-2xl text-black fa-regular fa-sun swap-on"
+        ></i>
+        <i
+          class="flex items-center justify-center text-2xl fa-regular fa-moon swap-off"
+        ></i>
+      </label>
+    </div>
+
+    <div id="container">
+      <audio id="song" autoplay loop>
+        <source src="./assets/audio/safe and sound.mp3" type="audio/mp3" />
+      </audio>
+
+      <div
+        class="audio-icon-wrapper z-[999] bg-white fixed hidden transition-all bottom-5 right-5 cursor-pointer rounded-full border border-black p-2 text-black"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 ikon-nyala"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="hidden w-6 h-6 ikon-mute"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <section id="main" class="h-screen">
+      <div class="container h-full">
+        <main class="h-full">
+          <div class="flex flex-col items-center justify-center h-full gap-5">
+            <h1
+              class="p-2 text-sm rounded-full h1-down md:text-base bg-primary"
+            >
+              kepada bapak/ibu/saudara/i,
+            </h1>
+            <h4 class="p-2 text-sm rounded-full md:text-base bg-primary">
+              Trah Eyang Riyo Lelono
+            </h4>
+            <p class="p-2 text-sm rounded-full md:text-base bg-primary">
+              Akan diadakan silaturahmi dalam :
+            </p>
+            <div class="simply-countdown"></div>
+            <div
+              class="flex items-center justify-center w-full gap-4 overflow-x-hidden reveal-down"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="hidden w-4 h-4 text-black arrow-right animate__animated animate__fast animate__bounceInLeft animate__repeat-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+
+              <a
+                href="#info"
+                class="text-sm rounded-full btn btn-secondary md:text-base"
+                id="lihat-undangan"
+                onclick="enableScroll()"
+                >Lihat Undangan</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="hidden w-4 h-4 text-black arrow-left animate__animated animate__fast animate__bounceInRight animate__repeat-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                />
+              </svg>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <secion id="info">
+      <div class="container mt-20">
+        <div class="relative flex justify-center">
+          <h2 class="text-lg md:text-2xl font-[cursive] font-bold absolute">
+            Informasi Acara
+          </h2>
+          <img
+            src="./assets/img/img1.jpg"
+            alt="img1"
+            class="object-cover object-center w-40 h-40 mt-8 rounded-full avatar md:w-60 md:h-60 md:mt-14"
+          />
+        </div>
+        <div class="relative mt-4 text-center">
+          <p class="max-w-[500px] p1 mx-auto tex-sm md:text-md mb-2">
+            Untuk mempererat ikatan persaudaraan antar keluarga, maka akan
+            diadakan acara
+          </p>
+          <h3 class="text-base md:text-lg">"Kumpul Trah Eyang Riyo Lelono"</h3>
+        </div>
+        <hr class="max-w-[250px] md:max-w-lg mx-auto my-5 border-black" />
+        <div class="text-center">
+          <p class="text-sm md:text-lg p2">Yang akan diselenggarakan pada :</p>
+          <div
+            class="flex flex-col items-center gap-4 mt-10 wrapper-info lg:flex-row lg:justify-center"
+          >
+            <div class="flex flex-col items-center gap-4 overflow-hidden">
+              <div class="wrapper-kalender">
+                <div id="calender"></div>
+              </div>
+              <add-to-calendar-button
+                name="Kumpul Trah"
+                description="Kumpul Trah Eyang Riyo Lelono"
+                options="'Apple','Google', 'Microsoft365'"
+                location="-7.967216, 110.6041"
+                startDate="2023-12-09"
+                endDate="2023-12-09"
+                startTime="12:00"
+                endTime="18:00"
+                timeZone="Asia/Jakarta"
+                hideBackground
+                buttonStyle="round"
+              ></add-to-calendar-button>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="wrapper-card">
+                <div class="card bg-primary">
+                  <div class="text-white card-body">
+                    <p>Tempat : Rumah Kakung Bambang Supriyanto, Wonosari</p>
+                    <p>Drescode : Atasan Putih</p>
+                    <p>Agenda : Makan Siang dan Temu Kangen</p>
+                  </div>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3951.3067582473586!2d110.60409999999999!3d-7.9672160000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNTgnMDIuMCJTIDExMMKwMzYnMTQuOCJF!5e0!3m2!1sid!2ssg!4v1700755208569!5m2!1sid!2ssg"
+                class="w-full h-60 lg:h-full rounded-3xl"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secion>
+
+    <section id="rsvp" class="py-20 mt-5 bg-accent">
+      <h2 class="text-lg md:text-2xl text-center font-[cursive]">
+        Konfirmasi Kehadiran
+      </h2>
+      <p class="py-3 text-sm text-center md:text-base">
+        Isi form dibawah ini untuk melakukan konfirmasi kehadiran.
+      </p>
+      <form
+        action="https://script.google.com/macros/s/AKfycbzzftS8WOwVnn6-DjtkHwtOzXoeTXsbDldaQAtl68bdIHoEAnFCs97qlsjcJeoF5K1ptA/exec"
+        method="post"
+        class="flex flex-col items-center justify-center gap-4 lg:flex-row"
+        id="form-rsvp"
+      >
+        <div class="form-control">
+          <label class="label" for="nama"
+            ><span class="label-text">Nama :</span></label
+          >
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            class="w-full input"
+            placeholder="Masukkan Nama Anda"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label" for="konfirmasi"
+            ><span class="label-text">Konfirmasi :</span></label
+          >
+          <select name="RSVP" id="konfirmasi" class="w-full select">
+            <option disabled selected>Pilih Salah Satu</option>
+            <option value="Hadir">hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+        <div class="form-control lg:self-end">
+          <button
+            type="submit"
+            name="kirim"
+            class="text-sm rounded-full btn kirim md:text-base"
+          >
+            Kirim
+          </button>
+          <button class="hidden btn load">
+            <span class="loading loading-spinner"></span>
+            loading
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section id="ending" class="py-10 my-10">
+      <div class="container">
+        <div class="flex flex-col gap-5 text-xs text-center md:text-base">
+          <p>Demikian Undangan ini kami sampaikan.</p>
+          <p>
+            Diharapkan kehadiran semua keluarga besar Trah Eyang Riyo Lelono
+          </p>
+          <p>Hormat kami Keluarga Besar Kakung Bambang Supriyanto.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3 bg-accent">
+      <div class="container">
+        <p class="text-xs text-center md:text-sm">
+          &copy; 2023 All Rights Reserved. Design by
+          <a
+            href="https://instagram.com/alx.dyy"
+            class="relative inline-block before:absolute before:-skew-y-3 before:-inset-1 before:block before:bg-blue-500 ms-1 hover:before:bg-pink-500"
+            ><span class="relative text-white">aldiipratama</span></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./assets/js/simplyCountdown.min.js"></script>
+    <script src="./assets/js/SwitchMode.js"></script>
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/disableScroll.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
+      async
+      defer
+    ></script>
+    <script src="./assets/js/calender.js"></script>
+    <script src="./assets/js/audio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/rsvp.js"></script>
+  </body>
+</html>
